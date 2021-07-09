@@ -119,6 +119,8 @@ img{
     letter-spacing: 0.02em;             
 
     color: var(--title-text-colot);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -147,6 +149,9 @@ img{
 .mailto-tel-link{
     display: flex;
     align-items: center;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mailto-tel-link:hover,
@@ -308,6 +313,30 @@ img{
     margin-left: 30px;
 }
 
+.out-work-card{
+    position: relative;
+}
+
+.our-work-p{
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-bg-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
 /*team*/
 
 .team{
@@ -391,6 +420,9 @@ img{
     border-radius: 50%;
     background-color: transparent;
     fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:focus,
@@ -446,6 +478,9 @@ img{
     fill:#AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-link:hover,
@@ -468,8 +503,7 @@ img{
     align-items: baseline;
 }
 
-.logo-footer{
- 
+.logo-footer{ 
     color: var(--primary-bg-color);
 }
 
@@ -500,6 +534,8 @@ img{
 .footer-mailto,
 .footer-tel{
     color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -557,6 +593,8 @@ img{
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);;
     fill: var(--primary-bg-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-list-link:focus,
@@ -600,6 +638,10 @@ img{
     background-color: #F5F4FA;
     border-radius: 4px;
     border-color: transparent;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:focus,
@@ -607,7 +649,6 @@ img{
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;;
 }
 
 /*---------img------------*/
@@ -637,6 +678,8 @@ img{
     display: block;
     text-decoration: none;
     color: currentColor;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-focus:hover,
