@@ -781,6 +781,7 @@ img{
     visibility: visible;
     pointer-events: auto;
     transition: opacity 500ms linear, visibility 500ms linear;
+
 }
 
 .modal{
